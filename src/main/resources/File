@@ -1,0 +1,130 @@
+
+
+"Ma'lumotlar ombori (Database) - bu ma'lumotlar to'plamini saqlash uchun ishlatiluvchi tizimdir.
+Bu tizim orqali ma'lumotlar yig'uvchi, yoqilg'i, yangilab turuvchi, so'rayuvchi va boshqa bir qancha amallar bajariladi.
+
+DBMS (Database Management System) - bu ma'lumotlar ombori tizimini boshqarish uchun ishlatiluvchi tizimdir.
+ Bu tizim orqali ma'lumotlarni saqlash, o'qish, yozish, yangilash va boshqa bir qancha boshqa amallar bajariladi.
+
+DBMS turli - yer joyi turi (File-based), taxminiy turi (Hierarchical), ta'sir turi (Network), relatsion turi (Relational)
+va boshqalari.
+
+RDBMS (Relational Database Management System) - bu turdagi ma'lumotlar ombori tizimi. Ushbu tizimda ma'lumotlar jadvallar ko'rinishida saqlanadi
+ va bu jadvallar orqali ma'lumotlar bir-biri bilan bog'lanadi.
+
+DBMS bilan RDBMS farqi - DBMS barcha ma'lumotlarni bir yerga saqlash uchun yordam beradi,
+ RDBMS esa ma'lumotlar jadvallar ko'rinishida saqlanadi va jadvallar orqali bog'lanadi.
+
+SQL (Structured Query Language) - bu ma'lumotlar ombori tizimlarida ma'lumotlar bilan ishlash uchun ishlatiluvchi so'rovnoma tilidir.
+ SQL yordamida ma'lumotlar omborida yangilik qo'shish, o'zgartirish, o'chirish va so'ralgan ma'lumotlarni izlash mumkin.
+
+So'rov (query) - SQL tilida ma'lumotlar omboridan so'ralgan ma'lumotlar jamlanmasidir.
+
+SQL elementlari - DDL (Data Definition Language), DML (Data Manipulation Language), TCL (Transaction Control Language)
+ va DQL (Data Query Language) kabi boshqa elementlar bor.
+
+DDL (Data Definition Language) - ma'lumotlar ombori obyektlarini (jadvallar, indekslar, fikr-mulohazalar,
+va boshqa obyektlar) yaratish, o'chirish va o'zgartirish uchun ishlatiladi.
+
+DML (Data Manipulation Language) - ma'lumotlarni o'zgartirish, yaratish va o'chirish uchun ishlatiladi.
+
+TCL (Transaction Control Language) - tranzaksiyalar boshqarish uchun ishlatiladi. Tranzaksiya -
+ bir yoki bir nechta amallarning birlashmasi, masalan, ma'lumotlar omborida ma'lumot qo'shish yoki o'zgartirish.
+
+DQL (Data Query Language) - bu SQL tilida ma'lumotlar omboridan ma'lumotlarni so'radi.
+DQL, ma'lumotlar omboridagi ma'lumotlar jamlanmalarini olish uchun SELECT so'rovnoma bilan ishlatiladi.
+
+Client-Server model - bu tizim modelli, tizimda xizmat ko'rsatuvchi server va u xizmatlardan foydalangan mijozlar (client) orasidagi aloqani ifodalaydi.
+ Bu modelda, server tizimni boshqaradi va xizmatlarni ko'rsatadi, clientlar esa server bilan aloqada bo'lib o'zlariga kerakli xizmatlarni so'raydi.
+
+PostgreSQL uchun clientlar - psql, pgAdmin, DBeaver, Navicat, SQL Workbench/J kabi ko'plab clientlar mavjud. psql -
+bu PostgreSQL komandali qator interfeysidir, boshqacha clientlar esa ko'proq grafik interfeyslarini taqdim etadi.
+ pgAdmin, DBeaver, Navicat va SQL Workbench/J, PostgreSQL omboriga grafik interfeys orqali aloqada bo'lib ma'lumotlar bazasini boshqarish imkoniyatini beradi.
+
+
+ DQL (Data Query Language) - bu SQL tilida ma'lumotlar omboridan ma'lumotlarni so'radi.
+ DQL, ma'lumotlar omboridagi ma'lumotlar jamlanmalarini olish uchun SELECT so'rovnoma bilan ishlatiladi.
+
+ Client-Server model - bu tizim modelli, tizimda xizmat ko'rsatuvchi server va u xizmatlardan foydalangan mijozlar (client) orasidagi aloqani ifodalaydi.
+  Bu modelda, server tizimni boshqaradi va xizmatlarni ko'rsatadi, clientlar esa server bilan aloqada bo'lib o'zlariga kerakli xizmatlarni so'raydi.
+
+ PostgreSQL uchun clientlar - psql, pgAdmin, DBeaver, Navicat, SQL Workbench/J kabi ko'plab clientlar mavjud. psql -
+  bu PostgreSQL komandali qator interfeysidir, boshqacha clientlar esa ko'proq grafik interfeyslarini taqdim etadi.
+   pgAdmin, DBeaver, Navicat va SQL Workbench/J, PostgreSQL omboriga grafik interfeys orqali aloqada bo'lib ma'lumotlar bazasini boshqarish imkoniyatini beradi.
+
+
+
+Table - bu ma'lumotlar omboridagi ma'lumotlar jamlanmasi (sahifa) hisoblanadi. Bu jamlanmalar ma'lumotlarni saqlash uchun foydalaniladi. Har bir jadval o'zining nomi, ustunlari (sarlavhalari) va qatorlari (ma'lumotlar jamlanmasi) mavjud.
+
+Upsert - bu ma'lumotlar bazasida qo'shish yoki o'zgartirish amalini bajarish uchun foydalaniluvchi tomonidan ishlatiladigan bitta so'rovdir. Agar ma'lumotlar omboridagi ma'lumot mavjud bo'lsa, yangi ma'lumot qo'shiladi, aks holda ma'lumot yangilanadi.
+
+PSQL-da muhim commandlar:
+
+SELECT - jadvaldan ma'lumotlarni olish uchun ishlatiladi
+INSERT - jadvalga yangi ma'lumot qo'shish uchun ishlatiladi
+UPDATE - mavjud ma'lumotlarni o'zgartirish uchun ishlatiladi
+DELETE - ma'lumotlar omboridan ma'lumotni o'chirish uchun ishlatiladi
+CREATE - yangi jadval yoki boshqa obyektlarni yaratish uchun ishlatiladi
+ALTER - mavjud jadval yoki boshqa obyektlarni o'zgartirish uchun ishlatiladi
+DROP - mavjud jadval yoki boshqa obyektlarni o'chirish uchun ishlatiladi
+Constraint - bu ma'lumotlar omboridagi jadvaldagi ma'lumotlar ustunlariga qo'yilgan cheklovlar. Bu cheklovlar orqali ma'lumotlar bazasiga ma'lumotlarni saqlashda cheklov tuzish mumkin.
+
+PostgreSQL-da qanday constraint lar bor:
+
+Primary Key
+Foreign Key
+Unique
+Check
+Not Null
+Foreign Key Constraint - bu bir jadvaldagi ustunlardan boshqa jadvaldagi ustunlarga o'xshashligi bo'lgan biror ustun uchun cheklovdir. Ustunlarning qiymatlarini tekshirib, boshqa jadvaldagi ustunlar bilan bog'liq ma'lumotlarni saqlash mumkin.
+
+Unique Constraint - bu ustunlarning barcha qiymatlari bir xil bo'lishi talab etiladigan cheklovdir.
+
+Check Constraint - bu ustunlarning qiymatlarini tekshirish uchun cheklovdir. Ustunning cheklovda aniqlangan shartni bajargan holda, ustun qiymati yoki qiymatlar to'g'ri bo'lishi talab etiladi.
+
+Not Null Constraint - bu ustunlarning qiymatlari null bo'lishini cheklash uchun cheklovdir.
+
+Jadvalda asosiy kalit cheklovi mavjud bo'lsa, bu asosiy kalit ustun(lar)i null qiymatlarni o'z ichiga olmaydi
+va jadvaldagi har bir satr uchun noyob qiymatga ega bo'lishi kerakligini anglatadi.
+Ushbu cheklov ma'lumotlar bazasini boshqarish tizimiga jadvaldagi har bir yozuvni bir ma'noda aniqlash
+va takroriy yozuvlardan qochish imkonini beradi.
+
+
+timestamp va timestamptz nima farqi bor ?
+PostgreSQL da timestamp va timestamptz tipi bor. Farqi shu ki, timestamp tanlangan vaqt zonasi bo'yicha saqlanadi, ya'ni, shu vaqtning offseti ko'rsatilmaydi. Timestamptz esa UTC (Coordinated Universal Time) ning offseti ko'rsatilgan sifatida saqlanadi.
+
+Qanday usullarda uuid yaratsa bo'ladi ?
+UUID (Universally Unique Identifier) turi 128-bit uzunligida hisoblanadi va bo'sh joyga ishlatiladigan bir necha usullarda yaratilishi mumkin. PostgreSQL da, uuid-ossp kengaytmasi orqali, UUID avtomatik tarzda yaratilishi mumkin. Buning uchun, UUID() funksiyasi ishlatiladi.
+
+hstore qanday ma'lumot turi xisoblanadi ?
+hstore turi, PostgreSQL da ma'lumotlarni raqamli kalitlar va ularning qiymatlari ko'rinishida saqlash uchun ishlatiladi. Hstore qiymati bir "key => value" juftligi sifatida ko'rsatiladi.
+
+json da -> va ->> farqlari nima ?
+PostgreSQL da json ma'lumotlari ichida ma'lumotni topish uchun -> va ma'lumotni string ko'rinishida olish uchun ->> operatorlari ishlatiladi.
+
+qanday usullar da custom data tip yaratish mumkin ?
+Custom data tip, CREATE TYPE operatori yordamida yaratilishi mumkin. Bu operator orqali, istalgan ma'lumot turi yaratish mumkin.
+
+domain bilan type ni nima fariq bor ?
+Domain, ma'lumotlar turi (data type) va ularning qisqa kommentariyalarini birlashtirish uchun ishlatiladi. Domain yaratish orqali, tayyor data type'ni yana bir nomda, tafsilotlar bilan birlashtirib, tayyorlash mumkin.
+
+sequence nima ?
+Sequence, PostgreSQL da avtomatik raqam ketma-ketligi yaratish uchun ishlatiladigan obyekt hisoblanadi. Sequence, avtomatik tarzda raqamlar yaratishni ta'minlaydi va bu, misol uchun, bir jadvalning primary key sifatida ishlatilishi mumkin.
+
+generated as identity nima ?
+Generated as identity, jadval yaratilganda, avtomatik tarzda raqamlar yaratishni ta'minlaydigan shaklda, jadval ustida column yaratish uchun ishlatiladi. Bu, PostgreSQL 10-dan boshlab mavjud bo'lgan yangi funksiyalardan biridir.
+
+
+Column alias, yoki column name alias, jadvallar yoki turli kuzatuvlar ustida amalga oshirilgan masalalarda ularning ismlarini almashtirish uchun ishlatiladi. Bu funksiya jadvallardagi ustunlarning nomlari uzun va xotira ko'pligini ishlatuvchilar uchun foydali bo'ladi. Masalan, agar biz uchta ustunni bog'lash orqali yangi ustun yaratmoqchi bo'lsak, biz o'zimiz yaratgan ustunlarimizni joylashtirish uchun ularning nomlarini almashtirishimiz kerak bo'ladi.
+
+ORDER BY klavuzi, natijalarni taxminiy tartibda saralash uchun ishlatiladi. Bu klavuz yordamida, bir nechta ustunlar yoki bir nechta to'plamlar ustida saralashni amalga oshirish mumkin. Natijalar yagona ustun yoki to'plam ustida saralanganda, saralash bo'yicha ular ko'rsatilgan tartibda olinadi. Agar bir nechta ustun yoki to'plamlar ustida saralangan bo'lsa, birinchi ustun yoki to'plamning qiymatlari saralash uchun muhimdir, va shu tartibda keldi. ORDER BY klavuzi, SELECT so'rovining oxirida keladi.
+
+DISTINCT operatori, bir nechta qatorlardan iborat bo'lgan natijalardan o'tmagan, faqat bir marta chiqadigan qiymatlarini ko'rsatish uchun ishlatiladi. Bu operator, bir nechta qatorlar bilan ifodalangan natijalarda bir vaqtning o'zida birinchi tashqi qiymatlarni olib tashlashga imkon beradi.
+
+BETWEEN operatori, belgilangan oraliqda (intervalda) bo'lgan qiymatlarni ko'rish uchun ishlatiladi. Bu operator, xohlagancha ustunlarni belgilangan oraliqda ko'rishga imkon beradi. BETWEEN operatori, araliklarni belgilash uchun kerak bo'ladi.
+
+LIKE va ILIKE operatorlari, belgilangan matn bilan mos keladigan qiymatni qidirish uchun ishlatiladi. LIKE operatori belgilangan qidiruvni tahrirlash uchun bo'lmasdan katta/kichik harflar va joker belgilarni ishlatishga imkon beradi, ILIKE esa katta/kichik harflarga tahlil qilishni qo'llab-quvvatlaydi.
+
+ALL, ANY, va EXISTS operatorlari, SELECT so'rovi ichida yordamchi ko'rinishida ishlatiladi va asosan boshqa so'rovlardan kelgan ma'lumotlarni o'z ichiga oladi. ALL operatori, belgilangan tarmoqda barcha natijalar bilan mos keladigan qiymatni qidir
+
+
